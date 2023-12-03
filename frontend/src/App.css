@@ -326,6 +326,7 @@ input[type="password"] {
 .profile-head > img{
   margin-top: 80px;
   border-radius: 200px;
+  height: 120px;
 }
 
 .info-container {

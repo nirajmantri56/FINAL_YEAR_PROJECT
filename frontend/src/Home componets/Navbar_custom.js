@@ -47,8 +47,8 @@ function NavbarCustom() {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="/Home">Home</Nav.Link>
-              <Nav.Link href="/projectpage">Project</Nav.Link>
-              <Nav.Link href="#action2">Connect with domain expert</Nav.Link>
+              <Nav.Link href="/projectpage">Add new projects</Nav.Link>
+              <Nav.Link href="/projectPage">Previously uploaded projects</Nav.Link>
 
               <Nav.Link href="#action2">Contact</Nav.Link>
               <Nav.Link href="/">Logout</Nav.Link>
@@ -59,11 +59,16 @@ function NavbarCustom() {
         </Navbar.Offcanvas>
         
 
-        <button className='profilebutton'><img src={profileimg} alt='img' className='profileicon'></img></button>
+        <button className='profilebutton'>
+          <Nav.Link href="/Profile">
+            <img src={profileimg} alt='img' className='profileicon'></img>
+          </Nav.Link>
+        </button>
         
       </Container>
     </Navbar>
   );
 }
+
 
 export default NavbarCustom;

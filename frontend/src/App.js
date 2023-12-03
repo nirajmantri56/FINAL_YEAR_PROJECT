@@ -6,6 +6,8 @@ import { Toaster } from 'react-hot-toast';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SignupPage from './pages/SignupPage';
 import Signinpage from './pages/Signinpage';
+import ProjectDetails from './pages/ProjectDetails';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -15,6 +17,12 @@ function App() {
         <Route path='/login' element={<Signinpage />} />
         <Route path='/Home' element={<Home />} />
         <Route path='/projectpage' element={<Projectpage />} />
+        <Route path='/projectpage' element={<Projectpage />} />
+        <Route path='/projectdetails/:projectStatement' element={<ProjectDetails />} />
+        <Route path='/Profile' element={<Profile />} />
+        
+
+        
       </Routes>
       <Toaster />
     </div>
